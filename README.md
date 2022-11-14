@@ -27,7 +27,7 @@ git clone https://github.com/pybind/pybind11.git
 git clone https://github.com/Att100/Python-Cuda-Extension.git
 cd Python-Cuda-Extension
 git clone https://github.com/pybind/pybind11.git
-sh ./scripts/build_pycuda_win.sh
+sh ./scripts/build_pycuda_linux.sh
 ```
 
 ### 2.4 Run Tests
