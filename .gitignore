@@ -1,0 +1,26 @@
+# build folder
+/build
+
+#dev folder
+/dev
+
+# pybind11 folder
+/pybind11
+
+# binary
+/pycuda/libs/*.so
+/pycuda/libs/*.dll
+/pycuda/libs/*.pyd
+
+# python cache
+__pycache__
+
+# vscode configuration folder
+/.vscode
+
+# jupyter
+*.ipynb
+
+# test
+/test.h
+/test.cu
