@@ -22,7 +22,7 @@ CuArray<float> FnBinaryC(CuArray<float> x, float y, FtypeBinaryC fn){
         x.get_descriptor().n_dims, x.get_descriptor().shape));
     _x = x.is_contiguous() ? x : x.contiguous();
     fn(_x.get_ptr(), y, z.get_ptr(), x.get_descriptor().n_size);
-    if (x.is_contiguous()){
+    if (!x.is_contiguous()){
         _x._free();
     }
     return z;
